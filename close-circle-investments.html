@@ -1,594 +1,455 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red118\green118\blue118;\red20\green20\blue20;}
-{\*\expandedcolortbl;;\cssrgb\c53725\c53725\c53725;\cssrgb\c10196\c10196\c10196;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Circle Investments - Wholesale Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            margin: 0;
+            background: #f7f8fa;
+            color: #222;
+        }
+        .navbar {
+            background: #1a2236;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+        }
+        .nav-logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-link:hover {
+            color: #f7c873;
+        }
+        .hero {
+            background: linear-gradient(120deg, #1a2236 60%, #f7c873 100%);
+            color: #fff;
+            padding: 4rem 0 3rem 0;
+        }
+        .hero-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 0 2rem;
+        }
+        .hero-content {
+            flex: 1 1 350px;
+        }
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .email-form-container {
+            background: #fff;
+            color: #222;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            max-width: 400px;
+        }
+        .email-form h3 {
+            margin-top: 0;
+        }
+        .form-group {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .email-form input[type="email"] {
+            flex: 1;
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .btn-primary {
+            background: #1a2236;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s;
+        }
+        .btn-primary:hover {
+            background: #f7c873;
+            color: #1a2236;
+        }
+        .hero-image {
+            flex: 1 1 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-placeholder {
+            background: #fff;
+            color: #1a2236;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        .about, .properties, .contact, .signature-section {
+            padding: 3rem 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .features {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: #fff;
+            border-radius: 8px;
+            padding: 1.2rem;
+            flex: 1;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .feature i {
+            font-size: 2rem;
+            color: #f7c873;
+            margin-bottom: 0.5rem;
+        }
+        .properties h2, .about h2, .contact h2, .signature-section h2 {
+            margin-bottom: 1.5rem;
+        }
+        .property-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .property-locked {
+            text-align: center;
+            color: #888;
+        }
+        .property-locked i {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .property-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+            width: 100%;
+            max-width: 500px;
+        }
+        .property-card h3 {
+            margin-top: 0;
+        }
+        .signature-section {
+            background: #f7c873;
+            color: #1a2236;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        .signature-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .signature-form .form-group {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        .signature-form label {
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+        .signature-form input[type="text"] {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form .form-group {
+            margin-bottom: 1rem;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form textarea {
+            min-height: 80px;
+        }
+        .footer {
+            background: #1a2236;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 900px) {
+            .hero-container {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-home"></i>
+                <span>Close Circle Investments</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#properties" class="nav-link">Properties</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
-<!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Close Circle Investments - Wholesale Real Estate</title>\
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">\
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">\
-    <style>\
-        * \{\
-            margin: 0;\
-            padding: 0;\
-            box-sizing: border-box;\
-        \}\
-        \
-        body \{\
-            font-family: 'Inter', Arial, sans-serif;\
-            background: #f7f8fa;\
-            color: #222;\
-            line-height: 1.6;\
-        \}\
-        \
-        .navbar \{\
-            background: #1a2236;\
-            color: #fff;\
-            padding: 1rem 0;\
-            position: fixed;\
-            width: 100%;\
-            top: 0;\
-            z-index: 1000;\
-        \}\
-        \
-        .nav-container \{\
-            max-width: 1100px;\
-            margin: 0 auto;\
-            display: flex;\
-            align-items: center;\
-            justify-content: space-between;\
-            padding: 0 2rem;\
-        \}\
-        \
-        .nav-logo \{\
-            font-size: 1.3rem;\
-            font-weight: 600;\
-            display: flex;\
-            align-items: center;\
-            gap: 0.5rem;\
-        \}\
-        \
-        .nav-menu \{\
-            display: flex;\
-            gap: 2rem;\
-        \}\
-        \
-        .nav-link \{\
-            color: #fff;\
-            text-decoration: none;\
-            font-weight: 500;\
-            transition: color 0.2s;\
-        \}\
-        \
-        .nav-link:hover \{\
-            color: #f7c873;\
-        \}\
-        \
-        .hero \{\
-            background: linear-gradient(120deg, #1a2236 60%, #f7c873 100%);\
-            color: #fff;\
-            padding: 8rem 0 4rem 0;\
-            min-height: 100vh;\
-            display: flex;\
-            align-items: center;\
-        \}\
-        \
-        .hero-container \{\
-            max-width: 1100px;\
-            margin: 0 auto;\
-            display: flex;\
-            align-items: center;\
-            justify-content: space-between;\
-            gap: 2rem;\
-            flex-wrap: wrap;\
-            padding: 0 2rem;\
-        \}\
-        \
-        .hero-content \{\
-            flex: 1 1 350px;\
-        \}\
-        \
-        .hero-title \{\
-            font-size: 2.5rem;\
-            margin-bottom: 1rem;\
-            font-weight: 700;\
-        \}\
-        \
-        .hero-subtitle \{\
-            font-size: 1.2rem;\
-            margin-bottom: 2rem;\
-            opacity: 0.9;\
-        \}\
-        \
-        .email-form-container \{\
-            background: #fff;\
-            color: #222;\
-            padding: 2rem;\
-            border-radius: 15px;\
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);\
-            max-width: 450px;\
-        \}\
-        \
-        .email-form h3 \{\
-            margin-top: 0;\
-            margin-bottom: 1rem;\
-            color: #1a2236;\
-        \}\
-        \
-        .form-group \{\
-            display: flex;\
-            gap: 0.5rem;\
-            margin-top: 1rem;\
-        \}\
-        \
-        .email-form input[type="email"] \{\
-            flex: 1;\
-            padding: 0.8rem;\
-            border: 2px solid #e1e5e9;\
-            border-radius: 8px;\
-            font-size: 1rem;\
-            transition: border-color 0.3s;\
-        \}\
-        \
-        .email-form input[type="email"]:focus \{\
-            outline: none;\
-            border-color: #f7c873;\
-        \}\
-        \
-        .btn-primary \{\
-            background: #1a2236;\
-            color: #fff;\
-            border: none;\
-            padding: 0.8rem 1.5rem;\
-            border-radius: 8px;\
-            font-size: 1rem;\
-            cursor: pointer;\
-            font-weight: 600;\
-            display: flex;\
-            align-items: center;\
-            gap: 0.5rem;\
-            transition: all 0.3s;\
-        \}\
-        \
-        .btn-primary:hover \{\
-            background: #f7c873;\
-            color: #1a2236;\
-            transform: translateY(-2px);\
-        \}\
-        \
-        .hero-image \{\
-            flex: 1 1 250px;\
-            display: flex;\
-            align-items: center;\
-            justify-content: center;\
-        \}\
-        \
-        .image-placeholder \{\
-            background: #fff;\
-            color: #1a2236;\
-            border-radius: 50%;\
-            width: 200px;\
-            height: 200px;\
-            display: flex;\
-            align-items: center;\
-            justify-content: center;\
-            font-size: 4rem;\
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);\
-        \}\
-        \
-        .about, .properties, .contact, .signature-section \{\
-            padding: 4rem 0;\
-        \}\
-        \
-        .container \{\
-            max-width: 900px;\
-            margin: 0 auto;\
-            padding: 0 2rem;\
-        \}\
-        \
-        .about-content \{\
-            display: flex;\
-            flex-direction: column;\
-            gap: 2rem;\
-        \}\
-        \
-        .features \{\
-            display: flex;\
-            gap: 2rem;\
-            margin-top: 2rem;\
-        \}\
-        \
-        .feature \{\
-            background: #fff;\
-            border-radius: 12px;\
-            padding: 2rem;\
-            flex: 1;\
-            text-align: center;\
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);\
-            transition: transform 0.3s;\
-        \}\
-        \
-        .feature:hover \{\
-            transform: translateY(-5px);\
-        \}\
-        \
-        .feature i \{\
-            font-size: 2.5rem;\
-            color: #f7c873;\
-            margin-bottom: 1rem;\
-        \}\
-        \
-        .feature h4 \{\
-            margin-bottom: 0.5rem;\
-            color: #1a2236;\
-        \}\
-        \
-        .properties h2, .about h2, .contact h2, .signature-section h2 \{\
-            margin-bottom: 2rem;\
-            text-align: center;\
-            color: #1a2236;\
-            font-size: 2.5rem;\
-        \}\
-        \
-        .property-list \{\
-            display: flex;\
-            flex-direction: column;\
-            align-items: center;\
-            gap: 2rem;\
-        \}\
-        \
-        .property-locked \{\
-            text-align: center;\
-            color: #666;\
-            background: #fff;\
-            padding: 3rem;\
-            border-radius: 12px;\
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);\
-        \}\
-        \
-        .property-locked i \{\
-            font-size: 3rem;\
-            margin-bottom: 1rem;\
-            color: #f7c873;\
-        \}\
-        \
-        .property-card \{\
-            background: #fff;\
-            border-radius: 12px;\
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);\
-            padding: 2rem;\
-            width: 100%;\
-            max-width: 500px;\
-            transition: transform 0.3s;\
-        \}\
-        \
-        .property-card:hover \{\
-            transform: translateY(-5px);\
-        \}\
-        \
-        .property-card h3 \{\
-            margin-top: 0;\
-            color: #1a2236;\
-            margin-bottom: 1rem;\
-        \}\
-        \
-        .property-card p \{\
-            margin-bottom: 0.5rem;\
-        \}\
-        \
-        .signature-section \{\
-            background: linear-gradient(135deg, #f7c873 0%, #f4b942 100%);\
-            color: #1a2236;\
-            border-radius: 15px;\
-            margin: 2rem 0;\
-            padding: 3rem 0;\
-        \}\
-        \
-        .signature-form \{\
-            max-width: 400px;\
-            margin: 0 auto;\
-        \}\
-        \
-        .signature-form .form-group \{\
-            flex-direction: column;\
-            align-items: flex-start;\
-            margin-bottom: 1.5rem;\
-        \}\
-        \
-        .signature-form label \{\
-            font-weight: 600;\
-            margin-bottom: 0.5rem;\
-            color: #1a2236;\
-        \}\
-        \
-        .signature-form input[type="text"] \{\
-            width: 100%;\
-            padding: 0.8rem;\
-            border: 2px solid #e1e5e9;\
-            border-radius: 8px;\
-            font-size: 1rem;\
-            transition: border-color 0.3s;\
-        \}\
-        \
-        .signature-form input[type="text"]:focus \{\
-            outline: none;\
-            border-color: #1a2236;\
-        \}\
-        \
-        .contact-form \{\
-            max-width: 500px;\
-            margin: 0 auto;\
-            background: #fff;\
-            padding: 2rem;\
-            border-radius: 12px;\
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);\
-        \}\
-        \
-        .contact-form .form-group \{\
-            margin-bottom: 1.5rem;\
-        \}\
-        \
-        .contact-form input, .contact-form textarea \{\
-            width: 100%;\
-            padding: 0.8rem;\
-            border: 2px solid #e1e5e9;\
-            border-radius: 8px;\
-            font-size: 1rem;\
-            transition: border-color 0.3s;\
-        \}\
-        \
-        .contact-form input:focus, .contact-form textarea:focus \{\
-            outline: none;\
-            border-color: #f7c873;\
-        \}\
-        \
-        .contact-form textarea \{\
-            min-height: 120px;\
-            resize: vertical;\
-        \}\
-        \
-        .footer \{\
-            background: #1a2236;\
-            color: #fff;\
-            text-align: center;\
-            padding: 2rem 0;\
-            margin-top: 2rem;\
-        \}\
-        \
-        @media (max-width: 768px) \{\
-            .hero-container \{\
-                flex-direction: column;\
-                text-align: center;\
-            \}\
-            \
-            .hero-title \{\
-                font-size: 2rem;\
-            \}\
-            \
-            .features \{\
-                flex-direction: column;\
-            \}\
-            \
-            .nav-menu \{\
-                display: none;\
-            \}\
-            \
-            .email-form-container \{\
-                max-width: 100%;\
-            \}\
-            \
-            .form-group \{\
-                flex-direction: column;\
-            \}\
-        \}\
-    </style>\
-</head>\
-<body>\
-    <!-- Navigation -->\
-    <nav class="navbar">\
-        <div class="nav-container">\
-            <div class="nav-logo">\
-                <i class="fas fa-home"></i>\
-                <span>Close Circle Investments</span>\
-            </div>\
-            <div class="nav-menu">\
-                <a href="#home" class="nav-link">Home</a>\
-                <a href="#about" class="nav-link">About</a>\
-                <a href="#properties" class="nav-link">Properties</a>\
-                <a href="#contact" class="nav-link">Contact</a>\
-            </div>\
-        </div>\
-    </nav>\
-\
-    <!-- Hero Section -->\
-    <section id="home" class="hero">\
-        <div class="hero-container">\
-            <div class="hero-content">\
-                <h1 class="hero-title">Exclusive Wholesale Real Estate Opportunities</h1>\
-                <p class="hero-subtitle">Access our curated portfolio of investment properties before they hit the market. Join our exclusive network of qualified investors.</p>\
-                \
-                <!-- Email Collection Form -->\
-                <div class="email-form-container">\
-                    <h3>Get Access to Our Properties</h3>\
-                    <form id="emailForm" class="email-form">\
-                        <div class="form-group">\
-                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>\
-                            <button type="submit" class="btn-primary">\
-                                <i class="fas fa-arrow-right"></i>\
-                                Get Properties\
-                            </button>\
-                        </div>\
-                    </form>\
-                </div>\
-            </div>\
-            <div class="hero-image">\
-                <div class="image-placeholder">\
-                    <i class="fas fa-building"></i>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- About Section -->\
-    <section id="about" class="about">\
-        <div class="container">\
-            <h2>About Close Circle Investments</h2>\
-            <div class="about-content">\
-                <div class="about-text">\
-                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">We specialize in connecting qualified investors with exclusive wholesale real estate opportunities. Our team has years of experience in identifying undervalued properties with high potential returns.</p>\
-                    <div class="features">\
-                        <div class="feature">\
-                            <i class="fas fa-chart-line"></i>\
-                            <h4>High Returns</h4>\
-                            <p>Properties with proven ROI potential and strong cash flow opportunities</p>\
-                        </div>\
-                        <div class="feature">\
-                            <i class="fas fa-shield-alt"></i>\
-                            <h4>Vetted Deals</h4>\
-                            <p>Thoroughly analyzed investment opportunities with detailed due diligence</p>\
-                        </div>\
-                        <div class="feature">\
-                            <i class="fas fa-users"></i>\
-                            <h4>Exclusive Access</h4>\
-                            <p>Limited to qualified investors only - no public listings</p>\
-                        </div>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- Properties Section -->\
-    <section id="properties" class="properties">\
-        <div class="container">\
-            <h2>Featured Properties</h2>\
-            <div class="property-list" id="propertyList">\
-                <!-- Properties will be shown here after email & signature -->\
-                <div class="property-locked">\
-                    <i class="fas fa-lock"></i>\
-                    <p>Sign up and sign our NDA to view our exclusive properties.</p>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- Signature Section (hidden by default) -->\
-    <section id="signatureSection" class="signature-section" style="display:none;">\
-        <div class="container">\
-            <h2>Sign Our NDA</h2>\
-            <p>To access our property listings, please sign our Non-Disclosure Agreement (NDA) below.</p>\
-            <form id="signatureForm" class="signature-form">\
-                <div class="form-group">\
-                    <label for="fullName">Full Name</label>\
-                    <input type="text" id="fullName" name="fullName" required>\
-                </div>\
-                <div class="form-group">\
-                    <label for="signature">Signature (type your name)</label>\
-                    <input type="text" id="signature" name="signature" required>\
-                </div>\
-                <button type="submit" class="btn-primary">Sign & View Properties</button>\
-            </form>\
-        </div>\
-    </section>\
-\
-    <!-- Contact Section -->\
-    <section id="contact" class="contact">\
-        <div class="container">\
-            <h2>Contact Us</h2>\
-            <form class="contact-form">\
-                <div class="form-group">\
-                    <input type="text" placeholder="Your Name" required>\
-                </div>\
-                <div class="form-group">\
-                    <input type="email" placeholder="Your Email" required>\
-                </div>\
-                <div class="form-group">\
-                    <textarea placeholder="Your Message" required></textarea>\
-                </div>\
-                <button type="submit" class="btn-primary">Send Message</button>\
-            </form>\
-        </div>\
-    </section>\
-\
-    <!-- Footer -->\
-    <footer class="footer">\
-        <div class="container">\
-            <p>&copy; 2024 Close Circle Investments. All rights reserved.</p>\
-        </div>\
-    </footer>\
-\
-    <script>\
-    // Email form logic\
-    document.addEventListener('DOMContentLoaded', function() \{\
-        const emailForm = document.getElementById('emailForm');\
-        const signatureSection = document.getElementById('signatureSection');\
-        const propertyList = document.getElementById('propertyList');\
-        const signatureForm = document.getElementById('signatureForm');\
-\
-        // Check if user already signed\
-        if (localStorage.getItem('signedNDA') === 'true') \{\
-            showProperties();\
-        \}\
-\
-        emailForm.addEventListener('submit', function(e) \{\
-            e.preventDefault();\
-            const email = document.getElementById('email').value;\
-            if (email) \{\
-                // Save email (for demo, just localStorage)\
-                localStorage.setItem('userEmail', email);\
-                // Show signature section\
-                signatureSection.style.display = 'block';\
-                signatureSection.scrollIntoView(\{ behavior: 'smooth' \});\
-            \}\
-        \});\
-\
-        signatureForm.addEventListener('submit', function(e) \{\
-            e.preventDefault();\
-            const fullName = document.getElementById('fullName').value;\
-            const signature = document.getElementById('signature').value;\
-            if (fullName && signature) \{\
-                // Save signature (for demo, just localStorage)\
-                localStorage.setItem('signedNDA', 'true');\
-                showProperties();\
-                // Optionally, hide signature section\
-                signatureSection.style.display = 'none';\
-            \}\
-        \});\
-\
-        function showProperties() \{\
-            // Example properties\
-            const properties = [\
-                \{\
-                    title: "3BR Single Family - Dallas, TX",\
-                    price: "$210,000",\
-                    desc: "Off-market deal, needs light rehab. ARV $300k+.",\
-                    address: "123 Main St, Dallas, TX"\
-                \},\
-                \{\
-                    title: "Duplex - Atlanta, GA",\
-                    price: "$320,000",\
-                    desc: "Fully rented, cash flowing. Great location.",\
-                    address: "456 Peachtree Ave, Atlanta, GA"\
-                \}\
-            ];\
-            propertyList.innerHTML = properties.map(p => `\
-                <div class="property-card">\
-                    <h3>$\{p.title\}</h3>\
-                    <p><strong>Price:</strong> $\{p.price\}</p>\
-                    <p><strong>Address:</strong> $\{p.address\}</p>\
-                    <p>$\{p.desc\}</p>\
-                </div>\
-            `).join('');\
-        \}\
-    \});\
-    </script>\
-</body>\
-</html>}
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Exclusive Wholesale Real Estate Opportunities</h1>
+                <p class="hero-subtitle">Access our curated portfolio of investment properties before they hit the market. Join our exclusive network of investors.</p>
+                
+                <!-- Email Collection Form -->
+                <div class="email-form-container">
+                    <h3>Get Access to Our Properties</h3>
+                    <form id="emailForm" class="email-form">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Properties
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-building"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Close Circle Investments</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We specialize in connecting qualified investors with exclusive wholesale real estate opportunities. Our team has years of experience in identifying undervalued properties with high potential returns.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>High Returns</h4>
+                            <p>Properties with proven ROI potential</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Vetted Deals</h4>
+                            <p>Thoroughly analyzed investment opportunities</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Exclusive Access</h4>
+                            <p>Limited to qualified investors only</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties">
+        <div class="container">
+            <h2>Featured Properties</h2>
+            <div class="property-list" id="propertyList">
+                <!-- Properties will be shown here after email & signature -->
+                <div class="property-locked">
+                    <i class="fas fa-lock"></i>
+                    <p>Sign up and sign our NDA to view our exclusive properties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Section (hidden by default) -->
+    <section id="signatureSection" class="signature-section" style="display:none;">
+        <div class="container">
+            <h2>Sign Our NDA</h2>
+            <p>To access our property listings, please sign our Non-Disclosure Agreement (NDA) below.</p>
+            <form id="signatureForm" class="signature-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signature">Signature (type your name)</label>
+                    <input type="text" id="signature" name="signature" required>
+                </div>
+                <button type="submit" class="btn-primary">Sign & View Properties</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Close Circle Investments. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    // Email form logic
+    document.addEventListener('DOMContentLoaded', function() {
+        const emailForm = document.getElementById('emailForm');
+        const signatureSection = document.getElementById('signatureSection');
+        const propertyList = document.getElementById('propertyList');
+        const signatureForm = document.getElementById('signatureForm');
+
+        // Check if user already signed
+        if (localStorage.getItem('signedNDA') === 'true') {
+            showProperties();
+        }
+
+        emailForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            if (email) {
+                // Save email (for demo, just localStorage)
+                localStorage.setItem('userEmail', email);
+                // Show signature section
+                signatureSection.style.display = 'block';
+                signatureSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        signatureForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const fullName = document.getElementById('fullName').value;
+            const signature = document.getElementById('signature').value;
+            if (fullName && signature) {
+                // Save signature (for demo, just localStorage)
+                localStorage.setItem('signedNDA', 'true');
+                showProperties();
+                // Optionally, hide signature section
+                signatureSection.style.display = 'none';
+            }
+        });
+
+        function showProperties() {
+            // Example properties
+            const properties = [
+                {
+                    title: "3BR Single Family - Dallas, TX",
+                    price: "$210,000",
+                    desc: "Off-market deal, needs light rehab. ARV $300k+.",
+                    address: "123 Main St, Dallas, TX"
+                },
+                {
+                    title: "Duplex - Atlanta, GA",
+                    price: "$320,000",
+                    desc: "Fully rented, cash flowing. Great location.",
+                    address: "456 Peachtree Ave, Atlanta, GA"
+                }
+            ];
+            propertyList.innerHTML = properties.map(p => `
+                <div class="property-card">
+                    <h3>${p.title}</h3>
+                    <p><strong>Price:</strong> ${p.price}</p>
+                    <p><strong>Address:</strong> ${p.address}</p>
+                    <p>${p.desc}</p>
+                </div>
+            `).join('');
+        }
+    });
+    </script>
+</body>
+</html>
